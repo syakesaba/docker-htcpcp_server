@@ -4,9 +4,13 @@ dockerfile for https://github.com/madmaze/HTCPCP
 
 Usage
 ==========================
+```
 docker build -t htcpcp_server .  
 docker run -ti -p 8080:8080 htcpcp_server #Ctrl+pq  
-echo "GET coffee://127.0.0.1/pot-1 HTCPCP/1.0" | telnet localhost 8080  
+telnet localhost 8080
+WHEN /pot-1 HTCPCP/1.0
+
+```
 
 Note
 ===========================
