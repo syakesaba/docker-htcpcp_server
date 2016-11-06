@@ -11,5 +11,6 @@ WORKDIR /root/HTCPCP-master
 RUN sh ./make.em
 EXPOSE 8080
 ADD ./entrypoint.sh /entrypoint.sh
+ADD ./htcpcp.cap /htcpcp.cap
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
